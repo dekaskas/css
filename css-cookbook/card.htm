@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Cookbook: card component</title>
+
+    <style>
+        body {
+            border-color: #fff;
+            color: #333;
+            font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            grid-gap: 20px;
+        }
+        .cards article {
+            border: 1px solid black;
+        }
+        .cards footer {
+            color: white;
+            background-color:  black;
+            padding: 8px;
+        }
+
+        .content {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <article>
+            <h2>A shrot heading</h2>
+            <img src="balloons.jpg" alt="Hot air balloons">
+            <div class="content">
+                <p>The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.</p>
+            </div>
+        </article>
+        <article>
+            <h2>A shrot heading</h2>
+            <img src="balloons2.jpg" alt="Hot air balloons">
+            <div class="content"><p>Short content.</p></div>
+            <footer>I have a footer!</footer>
+        </article>
+        <article>
+            <h2>A longer heading in this card</h2>
+            <img src="balloons.jpg" alt="Hot air baloons">
+            <div class="content"><p>In a curious work, published in Paris in 1863 by Delaville Dedreux, there is a suggestion for reaching the North Pole by an aerostat.</p></div>
+            <footer>I have a footer!</footer>
+        </article>
+        <article>
+            <h2>A shrot heading</h2>
+            <img src="balloons2.jpg" alt="Hot air balloons">
+            <div class="content"><p>The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.</p></div>
+        </article>
+    </div>
+</body>
+</html>
